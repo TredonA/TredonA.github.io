@@ -1,86 +1,137 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
 *, html, body {
+    max-width: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Roboto Slab', Serif;
-    overflow: hidden;
 }
 
-.logo{
+.logo {
     width: 50px;
     height: 50px;
     padding: 25px 50px 25px 50px;
 }
 
-.logo:hover{
-    background-color: #05F140;
-    border-radius: 15px;
-    transition: ease-in 0.3s;
+.logo2 {
+    width: 50px;
+    height: 50px;
+    padding: 25px 50px;
 }
-#CodingQualifications{
+
+.logo:hover {
+    background-color: #2CDA9D;
+    color: #F3F3F3;
+    border-radius: 15px;
+    transition: ease-in 0.2s;
+}
+
+#CodingQualifications {
     margin-top: 15px;
     background-color: #79EAF2;
-    margin-right: auto;
-    margin-left: auto;
-}
-#nav-bar {
-    width: 100%;
-    list-style-type: none;
-    font-size: 18px;
-    padding: 10px;
-    color: #3500cc;
-}
-#ProgrammingLanguages{
-    margin: 0 auto;
-}
-#clickableLinks {
-    float: right;
 }
 
-ul a {
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 16px;
+header {
+    text-align: right;
+    margin: 25px 80px;
+    font-size: 20px;
 }
 
-header > ul a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background: #9B89B3;
-    visibility: hidden;
-    border-radius: 5px;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in 0s;
-    transition: all 0.3s ease-in 0s;
-}
+    header a {
+        text-decoration: none;
+        display: inline-block;
+        margin: 0px 25px;
+        color: #333;
+    }
 
-header > ul a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+        header a:hover {
+            color: #79EAF2;
+            transition: ease-in .25s;
+        }
+
+#Greetings {
+    font-size: 45px;
+    width: 90%;
 }
 
 footer {
-    background-color: #3500CC;
+    background-color: #0A5A61;
+    color: #F3F3F3;
     padding: 14px;
-    width: 100%;
 }
 
 #introduction {
-    text-align: center;
+    margin-left: 20px;
     color: #333;
     margin-top: 20px;
-    margin-left: 16px;
     line-height: 55px;
 }
 
 #bottom-of-page {
     text-align: center;
+}
+
+#SamplePortfolios {
+    margin: 20px 0px;
+}
+
+    #SamplePortfolios h1 {
+        text-align: center;
+    }
+
+#ContactSection {
+    margin: 20px 0px 0px 0px;
+    padding: 25px 0px;
+    background-color: #2CDA9D;
+    text-align: center;
+}
+
+    #ContactSection h1 {
+        text-align: center;
+    }
+
+    #ContactSection a i {
+        color: #030303;
+        margin: 20px 0px;
+        padding: 0px 35px;
+        display: inline-block;
+        font-size: 50px;
+    }
+
+    #Projects{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+.Project {
+    display: inline-block;
+    background-color: #2CDA9D;
+    border-style: solid;
+    border-color: lightgray;
+    color: #333;
+    border-width: 2px;
+    text-align: center;
+    width: 400px;
+    height: 550px;
+    margin: 0px 20px;
+    margin-bottom: 20px;
+}
+
+    .Project h3, p {
+        text-decoration-style: none;
+        margin: 10px 0px;
+    }
+
+    .Project:hover {
+        border-color: black;
+    }
+
+.ProjectPic{
+    width: 400px;
+    height: 450px;
+}
+#ContactSection a i:hover {
+    color: #2c69da;
+    transition: ease-in .03s;
 }
