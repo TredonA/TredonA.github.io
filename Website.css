@@ -20,6 +20,20 @@
     padding: 25px 50px;
 }
 
+.logo .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #F3F3F3;
+    text-align: center;
+    padding: 2px 0;
+
+    z-index: 1;
+    border-radius: 6px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
 .logo:hover {
     background-color: #2CDA9D;
     color: #F3F3F3;
@@ -27,6 +41,9 @@
     transition: ease-in 0.2s;
 }
 
+.logo:hover .tooltiptext{
+    visibility: visible;
+}
 #CodingQualifications {
     margin-top: 15px;
     background-color: #79EAF2;
@@ -43,11 +60,13 @@ header {
         display: inline-block;
         margin: 0px 25px;
         color: #333;
+        border-bottom: 2px solid transparent;
     }
 
         header a:hover {
             color: #79EAF2;
-            transition: ease-in .25s;
+            -webkit-transition: ease-in .1s;
+            transition: ease-in .1s;
         }
 
 #Greetings {
@@ -83,7 +102,7 @@ footer {
 #ContactSection {
     margin: 20px 0px 0px 0px;
     padding: 25px 0px;
-    background-color: #2CDA9D;
+    background-color: #79EAF2;
     text-align: center;
 }
 
@@ -106,7 +125,7 @@ footer {
     }
 .Project {
     display: inline-block;
-    background-color: #2CDA9D;
+    background-color: #79EAF2;
     border-style: solid;
     border-color: lightgray;
     color: #333;
@@ -132,6 +151,15 @@ footer {
     height: 450px;
 }
 #ContactSection a i:hover {
-    color: #2c69da;
+    color: #2720E9;
+    transition: ease-in .03s;
+}
+
+#ContactSection h1 a {
+    color: #030303;
+}
+
+#ContactSection h1 a:hover{
+    color: #2720E9;
     transition: ease-in .03s;
 }
